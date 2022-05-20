@@ -1,0 +1,90 @@
+body {
+  font-family: 'Odibee Sans', cursive;
+}
+.wraper {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+.calendar__body {
+  width: 350px;
+  height: 350px;
+  border: 0.5px solid #413f42;
+}
+.calendar__static {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 50px;
+}
+.calendar__static__item {
+  border: 0.5px solid #413f42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8e3e7;
+}
+/* /////////////////////// */
+.calendar__main {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 50px);
+}
+
+.point {
+  cursor: pointer;
+}
+.point:hover {
+  opacity: 0.7;
+}
+.point:active {
+  opacity: 0.5;
+}
+.calendar__main__item {
+  border: 0.5px solid #0a070c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9772fb;
+}
+.focus {
+  border: 1.5px solid white;
+}
+.happy {
+  background-color: #ff5677;
+}
+
+/* INPUT */
+.input__notes {
+  margin: 0px 30px;
+}
+.input__header {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+.input__subtitle {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: rgb(43, 43, 43);
+}
+.input__input {
+  height: 30px;
+  width: 260px;
+  border: 1px solid #413f42;
+  margin-bottom: 15px;
+  padding: 4px;
+  font-size: 16px;
+}
+.input__button {
+  font-size: 16px;
+  padding: 8px 8px;
+  max-width: 100px;
+  border: 1px solid #413f42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.input__input:active {
+  border: 1.5px solid #413f42;
+  border-radius: 0px;
+}
